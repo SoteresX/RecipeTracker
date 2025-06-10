@@ -1,10 +1,10 @@
 import React from "react";
-import FoodProgress from '../components/FoodProgress'
+import RecipeBox from '../components/RecipeBox/RecipeBox'
 import '../styles/App.css';
 
 function Home(){
     return <>
-        <FoodProgress/>
+        <RecipeBox food="Spaghetti" url="/spaghetti" rank="Not Yet Learned"/>
     </>
 }
 

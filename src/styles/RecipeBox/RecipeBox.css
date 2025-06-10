@@ -1,0 +1,46 @@
+:root{
+    --borderRadius: 20px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.foodContainer {
+    width: fit-content;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.foodContainer button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--borderRadius);
+    padding: 5px;
+    width: 70px;
+    height: 20px;
+    border: 0.2px solid ;
+    transition: 500ms;
+}
+
+.foodContainer button:hover{
+    width: 80px;
+    padding: 7px;
+    transition: 500ms;
+}
+
+.foodContainer button img{
+    position: relative;
+    left: 3px;
+}
+
+h2{
+    font-size: 20px;
+}
