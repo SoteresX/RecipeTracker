@@ -1,0 +1,39 @@
+.container {
+  width: 90px;
+  height: 110px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.outer {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: conic-gradient(#F2C078 30%, transparent 0deg),
+  conic-gradient(#C1DBB3 0% 100%); /* Filled part */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 3px white;
+  padding: 33px;
+}
+
+.inner {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
