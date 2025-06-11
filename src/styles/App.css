@@ -3,6 +3,16 @@
     --bgColor: rgb(250, 237, 202);
 }
 
+#root{
+    display: flex;
+    flex-direction: column;
+}
+
+.recipes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 html {
     background-color: var(--bgColor);
 }

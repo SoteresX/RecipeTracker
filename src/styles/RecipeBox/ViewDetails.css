@@ -1,38 +1,21 @@
-.detailsContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.mastery{
-    font-size: 10px;
-    right: 0;
-}
-
 .btn{
     display: flex;
     align-items: center;
     justify-content: center;
     width: fit-content;
     gap: 3px;
-    padding: 2px 0px 2px 0px;
+    padding: 5px 0px 5px 0px;
     border: transparent;
     border-radius: var(--borderRadius);
     background-color: transparent;
-    font-size: 8px;
+    font-size: 15px;
     transition: 100ms;
     text-decoration: none;
-}
-
-.detailsContainer button span{
-    font-size: 7px;
 }
 
 .btn:hover{
     box-shadow: 1px 1px 2px rgb(150, 141, 120),
     -1px -1px 2px rgb(247, 239, 220);
     transition: 100ms;
-    padding: 2px 3px 2px 3px;
+    padding: 5px 3px 5px 3px;
 }
