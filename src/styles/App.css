@@ -1,12 +1,13 @@
+:root{
+    --textColor: #691A00;
+    --bgColor: rgb(250, 237, 202);
+}
+
 html {
-    background-color: rgb(250, 237, 202);
+    background-color: var(--bgColor);
 }
 
-h2{
-    color: #691A00;
-}
-
-p{
-    color: #691A00;
+h1, h2, p{
+    color: var(--textColor);
 }
 
