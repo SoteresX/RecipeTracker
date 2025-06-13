@@ -1,5 +1,6 @@
 import React from "react";
-import foodImage from "../../assets/images/spaghetti.webp"
+import foodImage from "../../assets/images/spaghetti.webp";
+import "../../styles/RecipeBox/Rank.css";
 
 function Rank(props){
     return <>
