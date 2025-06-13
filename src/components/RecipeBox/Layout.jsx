@@ -16,7 +16,7 @@ function Layout(props){
                 <Rank exp={exp}/>
                 <p className="mastery">Not yet learned</p> 
                 <ViewRecipe url="spaghetti"/>
-                <CookedButton onCooked={() => setExp(prevExp => prevExp + 10)}/>
+                {/* <CookedButton onCooked={() => setExp(prevExp => prevExp + 10)}/> */}
                 <Bar id="difficulty" header="Difficulty" progress="2"/>
                 <Bar id="time" header="Time" progress="2"/>
                 <Bar id="cost" header="Cost" progress="2"/>
