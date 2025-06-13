@@ -2,6 +2,7 @@ import React from "react";
 import "../../styles//RecipeBox/Layout.css";
 import ViewDetails from "./ViewDetails";
 import foodImage from "../../assets/images/spaghetti.webp";
+import Bar from "./Bar";
 
 function Layout(props){
     return <div className="recipeSummary">
@@ -13,7 +14,10 @@ function Layout(props){
                     </div>
                 </div>
                 <p className="mastery">Not yet learned</p> 
-                <ViewDetails/>
+                <ViewDetails url="spaghetti"/>
+                <Bar id="difficulty" header="Difficulty" progress="2"/>
+                <Bar id="time" header="Time" progress="2"/>
+                <Bar id="cost" header="Cost" progress="2"/>
         </div>
     </div>
 }
