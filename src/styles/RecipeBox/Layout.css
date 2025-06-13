@@ -77,32 +77,6 @@
     right: 0;
 }
 
-.foodContainer button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: var(--borderRadius);
-    padding: 5px;
-    width: 120px;
-    height: 40px;
-    border: 0.2px solid ;
-    transition: 500ms;
-}
-
-.foodContainer button:hover{
-    width: 130px;
-    transition: 500ms;
-}
-
-.foodContainer button img{
-    position: relative;
-    left: 3px;
-}
-
-.foodContainer button span{
-    font-size: 13px;
-}
-
 h2{
     font-size: 35px;
 }

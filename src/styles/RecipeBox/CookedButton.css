@@ -1,0 +1,25 @@
+.markAsCookedButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--borderRadius);
+    padding: 5px;
+    width: 120px;
+    height: 40px;
+    border: 0.2px solid ;
+    transition: 500ms;
+}
+
+.markAsCookedButton:hover{
+    width: 130px;
+    transition: 500ms;
+}
+
+.markAsCookedButton img{
+    position: relative;
+    left: 3px;
+}
+
+.markAsCookedButton span{
+    font-size: 13px;
+}
