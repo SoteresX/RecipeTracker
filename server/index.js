@@ -1,7 +1,10 @@
 import express from "express";
 import cors from "cors";
 import pg from "pg";
-import {pool} from "pool";
+import dotenv from "dotenv";
+
+dotenv.config();
+const {Pool} = pg;
 
 const app = express();
 const port = 5000;
@@ -12,11 +15,11 @@ app.use(cors({
 ));
 
 const pool = new Pool({
-  user: 'postgres',
-  host: 'localhost',
-  database: 'RecipeTracker',
-  password: 'postGRESQL',
-  port: 5432,
+  user: process.env.PGUSER,
+  host: process.env.PGHOST,
+  database: process.env.PGDATABASE,
+  password: process.env.PGPASSWORD,
+  port: process.env.PGPORT,
 });
 
 pool.query('SELECT NOW()', (err, res) => {
