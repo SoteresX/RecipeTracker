@@ -1,0 +1,30 @@
+.recipeBody{
+    align-self: flex-start;
+    display: flex;
+    height: 99vh;
+    gap: 50px;
+    
+}
+
+.recipeImage{
+    height: 100%;
+    max-width: 500px;
+    object-fit:cover;
+    width: 600px;
+}
+
+.recipeBars{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.recipeBars b{
+    font-size: 20px;
+}
+
+h1{
+    margin-bottom: 10px;
+}

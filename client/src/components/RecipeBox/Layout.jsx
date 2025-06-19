@@ -17,9 +17,9 @@ function Layout(props){
                 <p className="mastery">Not yet learned</p> 
                 <ViewRecipe url="spaghetti"/>
                 {/* <CookedButton onCooked={() => setExp(prevExp => prevExp + 10)}/> */}
-                <Bar id="difficulty" header="Difficulty" progress="2"/>
-                <Bar id="time" header="Time" progress="2"/>
-                <Bar id="cost" header="Cost" progress="2"/>
+                <Bar id="difficulty" class="segment-home" progress="1"/>
+                <Bar id="time" class="segment-home" header="Time" progress="2" value="30"/>
+                <Bar id="cost" class="segment-home" header="Cost" progress="1" value="4"/>
         </div>
     </div>
 }
