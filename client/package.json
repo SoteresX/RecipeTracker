@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.80.10",
     "framer-motion": "^12.16.0",
     "lifeup": "file:",
     "locale-currency": "^0.0.4",

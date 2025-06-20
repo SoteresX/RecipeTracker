@@ -28,3 +28,14 @@
 h1{
     margin-bottom: 10px;
 }
+
+li{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.recipeIngredients{
+    margin-top: 10px;
+}

@@ -1,6 +1,5 @@
 function formatTime(minutes) {
 
-  console.log(minutes);
   if (minutes < 60) {
     return `${minutes} minute${minutes !== 1 ? 's' : ''}`
   } else {

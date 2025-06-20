@@ -29,3 +29,17 @@ pool.query('SELECT NOW()', (err, res) => {
     console.log('Connected to database at:', res.rows[0].now)
   }
 })
+
+app.get("/api/recipe_ingredients", async (req, res) => {
+  try{
+    const result = await pool.query("SELECT * FROM recipe_ingredients WHERE recipe_id = 1");
+    res.json(result.rows);
+  } catch(err){
+    console.error(err);
+    res.status(500).json({ error: 'Database query failed' });
+  }
+})
+
+app.listen(5000, () => {
+  console.log('Server running on port 5000');
+});
