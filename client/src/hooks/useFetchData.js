@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 
 function useFetchData({ queryKey, endpoint, params }) {
+  console.log('useFetchData called with:', { queryKey, endpoint, params });
   return useQuery({
     queryKey: [queryKey, params],
     queryFn: async () => {
@@ -10,6 +11,7 @@ function useFetchData({ queryKey, endpoint, params }) {
           url.searchParams.append(key, value)
         );
       }
+      
       const res = await fetch(url);
       if (!res.ok) throw new Error('Network response was not ok');
       return res.json();

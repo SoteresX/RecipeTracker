@@ -7,7 +7,7 @@ import "../../styles/RecipeBox/Bar.css"
 function Bar(props){
     const segments = Array.from({ length: 5 }, (_, index) => (
     <div  id={props.id} key={index}
-      className={`${props.class} color ${index < props.progress ? 'filled' : ''}`}
+      className={`${props.className} color ${index < props.progress ? 'filled' : ''}`}
     ></div>
     ));
 

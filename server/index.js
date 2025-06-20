@@ -31,8 +31,16 @@ pool.query('SELECT NOW()', (err, res) => {
 })
 
 app.get("/api/recipe_ingredients", async (req, res) => {
+
+  const recipeId = req.query.recipeId;
+  console.log(recipeId);
+
+   if (!recipeId) {
+    return res.status(400).json({ error: 'recipeId query parameter is required' });
+  }
+
   try{
-    const result = await pool.query("SELECT * FROM recipe_ingredients WHERE recipe_id = 1");
+    const result = await pool.query("SELECT * FROM recipe_ingredients WHERE recipe_id = $1", [recipeId]);
     res.json(result.rows);
   } catch(err){
     console.error(err);
@@ -42,4 +50,21 @@ app.get("/api/recipe_ingredients", async (req, res) => {
 
 app.listen(5000, () => {
   console.log('Server running on port 5000');
+});
+
+app.get("/api/recipe_instructions", async (req, res) => {
+
+  const recipeId = req.query.recipeId;
+
+  if (!recipeId) {
+    return res.status(400).json({ error: 'recipeId query parameter is required' });
+  }
+
+   try{
+    const result = await pool.query("SELECT * FROM recipe_instructions WHERE recipe_id = $1", [recipeId]);
+    res.json(result.rows);
+  } catch(err){
+    console.error(err);
+    res.status(500).json({ error: 'Database query failed' });
+  }
 });
