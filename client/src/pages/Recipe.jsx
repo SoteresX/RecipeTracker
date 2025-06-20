@@ -8,15 +8,16 @@ import { useQueries } from "@tanstack/react-query";
 import useFetchData from "../hooks/useFetchData";
 import Ingredients from "../components/RecipePage/Ingredients";
 import Instructions from "../components/RecipePage/Instructions";
+import capitalizeFirstLetter from "../utils/capitalizeFirstLetter";
 
-function Spaghetti() {
+function Recipe() {
 
   const {recipeName} = useParams();
   return (
     <div className="recipeBody">
       <img className="recipeImage" src={foodImage} width="20px" height="20px"/>
       <div>
-        <h1>Spaghetti</h1>
+        <h1>{capitalizeFirstLetter(recipeName)}</h1>
         <hr/>
         <div className="recipeBars">
           <Bar id="difficulty" className="segment-recipe" header="🔥 Difficulty" progress="1"/>
@@ -32,4 +33,4 @@ function Spaghetti() {
   );
 }
 
-export default Spaghetti;
+export default Recipe;
