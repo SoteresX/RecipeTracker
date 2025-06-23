@@ -1,12 +1,15 @@
 import React from "react";
 import foodImage from "../../assets/images/spaghetti.webp";
-import "../../styles/RecipeBox/Rank.css"
+
 
 function Rank(props){
-    return <div className="flex-col">
-        <div className="experience">
-            <div className="rank">
-                <img src={foodImage} alt="food image"/>
+    return <div className="flex flex-col items-center">
+        <div className="experience p-[12px] transition-all duration-500 flex items-center justify-center hover:p-[6px]">
+            <div className="rank noRank flex items-center justify-center">
+                <img 
+                    src={foodImage} 
+                    alt="food image"
+                    className="max-w-[75%] h-[60%] border-[2px] border-white rounded-full object-cover"/>
             </div>
         </div>
         {props.showXP ? <h4>{props.exp} XP</h4> : null}

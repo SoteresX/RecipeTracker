@@ -1,0 +1,8 @@
+:root{
+    --textColor: #691A00;
+    --bgColor: rgb(250, 237, 202);
+    --difficultyColor: rgb(237, 154, 0);
+    --timeColor: rgb(0, 208, 215);
+    --costColor: rgb(3, 194, 0);
+    --barBg:  rgba(152,76,0,0.19);
+}

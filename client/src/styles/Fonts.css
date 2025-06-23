@@ -1,0 +1,9 @@
+@font-face{
+    font-family: 'Lora';
+    src: url("../../src/assets/fonts/Lora-Regular.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url("../../src/assets/fonts/Quicksand-Regular.woff2") format('woff2');
+}

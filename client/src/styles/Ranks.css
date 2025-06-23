@@ -1,0 +1,22 @@
+.noRank{ 
+    background: conic-gradient(#C4C4C4 17%, transparent 0deg),
+    conic-gradient(#3D3D3D 37%, #858585 67%, #d6d6d6  20%);
+    filter: var(--grayScale);
+}
+
+.bronzeRank{
+    background: conic-gradient(#CD7F32 17%, transparent 0deg),
+    conic-gradient(#83470a 37%, #b15f08 67%, #db9c59  20%);
+}
+.goldRank{ 
+    background: conic-gradient(#be9e1c 17%, transparent 0deg),
+    conic-gradient(#775f00 37%, #ac8900 67%, #f0c003  20%);
+}
+.diamondRank{ 
+    background: conic-gradient(#0495d3 17%, transparent 0deg),
+    conic-gradient(#005a70 37%, #0073b6 67%, #05bcc2  20%);
+}
+.amethystRank{
+    background: conic-gradient(	#83509f 17%, transparent 0deg),
+    conic-gradient(#3a0c57 37%, #50246c 67%, #a88bbd  20%);
+} 

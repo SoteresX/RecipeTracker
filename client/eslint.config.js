@@ -23,6 +23,9 @@ export default [
     rules: {
       ...js.configs.recommended.rules,
       ...reactHooks.configs.recommended.rules,
+      "at-rule-no-unknown": [true, {
+      "ignoreAtRules": ["theme"]
+      }],
       'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Za-z_]' }],
       'react-refresh/only-export-components': [
         'warn',

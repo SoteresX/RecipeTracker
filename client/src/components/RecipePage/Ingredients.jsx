@@ -1,7 +1,7 @@
 import React from "react"
 import useFetchData from "../../hooks/useFetchData";
 import DataStatus from "../DataStatus";
-import "../../styles/RecipePage/Ingredients.css"
+
 
 function Ingredients(){
 
@@ -20,10 +20,10 @@ function Ingredients(){
             data={data} 
             emptyMessage="No ingredients found." 
         />
-        <ul className="ingredientList">  
+        <ul className="list-disc list-inside pl-4">  
             {data?.map((recipe, index) => (
-            <li className="item" key={index}>
-                <div className="item-row">
+            <li className="mb-2 last:mb-0 list-outside list-item" key={index}>
+                <div className="flex justify-between border-b border-black w-full text-xl ml-2">
                     <i>{recipe.ingredient_name}</i>
                     <i>{recipe.quantity}</i>
                 </div>
