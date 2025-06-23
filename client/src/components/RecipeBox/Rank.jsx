@@ -9,7 +9,7 @@ function Rank(props){
                 <img src={foodImage} alt="food image"/>
             </div>
         </div>
-        <h4>{props.exp} XP</h4>
+        {props.showXP ? <h4>{props.exp} XP</h4> : null}
     </div>
 }
 

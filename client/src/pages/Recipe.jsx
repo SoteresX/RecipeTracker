@@ -8,6 +8,7 @@ import { useQueries } from "@tanstack/react-query";
 import useFetchData from "../hooks/useFetchData";
 import Ingredients from "../components/RecipePage/Ingredients";
 import Instructions from "../components/RecipePage/Instructions";
+import Rank from "../components/RecipeBox/Rank";
 import capitalizeFirstLetter from "../utils/capitalizeFirstLetter";
 
 function Recipe() {
@@ -16,15 +17,19 @@ function Recipe() {
   return (
     <div className="recipeBody">
       <img className="recipeImage" src={foodImage} width="20px" height="20px"/>
-      <div>
-        <h1>{capitalizeFirstLetter(recipeName)}</h1>
-        <hr/>
-        <div className="recipeBars">
-          <Bar id="difficulty" className="segment-recipe" header="🔥 Difficulty" progress="1"/>
-          <Bar id="time" className="segment-recipe" header="⏲️ Time" progress="2" value="30"/>
-          <Bar id="cost" className="segment-recipe" header="💳 Cost" progress="1" value="4"/>
+      <div className="recipeDetails">
+        <div className="recipeHeader">
+          <Rank/>
+          <div>
+            <h1>{capitalizeFirstLetter(recipeName)}</h1>
+             <div className="recipeBars">
+              <Bar id="difficulty" className="segment-recipe" header="🔥 Difficulty" progress="1"/>
+              <Bar id="time" className="segment-recipe" header="⏲️ Time" progress="2" value="30"/>
+              <Bar id="cost" className="segment-recipe" header="💳 Cost" progress="1" value="4"/>
+              </div>
+          </div>
         </div>
-        
+        <hr/>
         <Ingredients/>
         <Instructions/>
         <CookedButton/>

@@ -1,6 +1,7 @@
 import React from "react"
 import useFetchData from "../../hooks/useFetchData";
 import DataStatus from "../DataStatus";
+import "../../styles/RecipePage/Instructions.css"
 
 function Instructions(){
 
@@ -21,7 +22,11 @@ function Instructions(){
         />
         <ol className="instructionList">  
             {data?.map((recipe, index) => (
-            <li key={index}><i>{recipe.instructions}</i></li>
+            <li className="item" key={index}>
+                <div className="item-row">
+                    <i>{recipe.instructions}</i>
+                </div>
+            </li>
         ))}
         </ol>
     </>
