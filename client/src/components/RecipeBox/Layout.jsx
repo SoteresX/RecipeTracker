@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import ViewRecipe from "./ViewRecipe.jsx";
 import foodImage from "../../assets/images/spaghetti.webp";
-import CookedButton from "./CookedButton.jsx";
 import Bar from "./Bar";
 import Rank from "./Rank.jsx"
 
@@ -15,7 +14,6 @@ function Layout(props){
                 <Rank exp={exp} showXP="true"/>
                 <p className="text-[20px]">Not yet learned</p> 
                 <ViewRecipe url="spaghetti"/>
-                {/* <CookedButton onCooked={() => setExp(prevExp => prevExp + 10)}/> */}
                 <Bar id="difficulty" page="home" progress="1"/>
                 <Bar id="time" page="home" header="Time" progress="2" value="30"/>
                 <Bar id="cost" page="home" header="Cost" progress="1" value="4"/>
