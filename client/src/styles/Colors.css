@@ -1,8 +1,17 @@
 :root{
-    --textColor: #691A00;
-    --bgColor: rgb(250, 237, 202);
+    --textColor: hsl(42, 68%, 20%);
+
+    --bg-dark: hsl(42, 68%, 90%);
+    --bgColor: hsl(42, 68%, 85%);
+
+    --borderColor: hsl(42, 68%, 40%);
+
+    --primaryButton: hsla(42, 100%, 20%, 1);
+    --infoColor: hsla(42, 100%, 40%, 1);
+
     --difficultyColor: rgb(237, 154, 0);
     --timeColor: rgb(0, 208, 215);
     --costColor: rgb(3, 194, 0);
+    
     --barBg:  rgba(152,76,0,0.19);
 }

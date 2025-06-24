@@ -8,9 +8,9 @@ function Layout(props){
 
     const [exp, setExp] = useState(0);
 
-    return <div className="ml-5 mt-5 p-[30px] border-2 border-black rounded-[50px]">
+    return <div className="layout ml-5 mt-5 p-6 border-2 border-borderColor rounded-[50px] bg-bgColor">
         <div className="w-[150px] flex flex-col justify-center items-center gap-2.5">
-            <h2 className="text-[35px]">{props.food}</h2>
+            <h2 className="text-[35px] font-secondary">{props.food}</h2>
                 <Rank exp={exp} showXP="true"/>
                 <p className="text-[20px]">Not yet learned</p> 
                 <ViewRecipe url="spaghetti"/>

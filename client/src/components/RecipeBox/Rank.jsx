@@ -12,7 +12,7 @@ function Rank(props){
                     className="max-w-[75%] h-[60%] border-[2px] border-white rounded-full object-cover"/>
             </div>
         </div>
-        {props.showXP ? <h4>{props.exp} XP</h4> : null}
+        {props.showXP ? <p className="mt-2">{props.exp} XP</p> : null}
     </div>
 }
 

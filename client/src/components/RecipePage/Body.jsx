@@ -1,7 +1,7 @@
 import React from "react";
-import Ingredients from "../RecipePage/Ingredients";
-import Instructions from "../RecipePage/Instructions";
-import CookedButton from "../RecipePage/CookedButton";
+import Ingredients from "./Ingredients";
+import Instructions from "./Instructions";
+import CookedButton from "./CookedButton";
 import Stats from "./Stats";
 
 function Body(props){

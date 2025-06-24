@@ -6,10 +6,21 @@
 @theme{
     --font-primary: "Lora", serif;
     --font-secondary: "Quicksand", sans-serif;
+
+    --color-bgColor: var(--bgColor);
     --color-barBg: var(--barBg);
+
+    --color-textSecondary: var(--bgColor);
+
+    --color-borderColor: var(--borderColor);
+    --color-primaryColor: var(--primaryButton);
+    --color-infoColor: var(--infoColor);
+
     --color-difficultyColor: var(--difficultyColor);
     --color-timeColor: var(--timeColor);
     --color-costColor: var(--costColor);
+
+    
 }
 
 :root{
@@ -18,11 +29,19 @@
 }
 
 html {
-    background-color: var(--bgColor);
+    background-color: var(--bg-dark);
 }
 
 h1, h2, p{
     color: var(--textColor);
+}
+
+h1,h2,h3,h4{
+    font-family: "Quicksand", sans-serif;
+}
+
+p, span, a{
+    font-family: "Lora", serif;
 }
 
 h1{
@@ -45,4 +64,8 @@ h2{
 
 .rank img{
     filter: var(--grayScale);
+}
+
+.layout:hover{
+    background: linear-gradient(to bottom right, var(--bg-dark) 10%, var(--bgColor) 70%);
 }
